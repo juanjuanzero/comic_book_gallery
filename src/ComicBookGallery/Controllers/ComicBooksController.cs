@@ -17,7 +17,7 @@ namespace ComicBookGallery.Controllers
             _comicBookRepository = new ComicBookRepository();
         }
 
-        public ActionResult Index() //created an index method? or property in this class so that MVC will display this because MVC looks for a home directory and an index property.
+        public ActionResult Index() //created an index method? or property in this class so that MVC will display this because MVC looks for a home directory and an index action.
         {
             var comicBooks = _comicBookRepository.GetComicBooks();
 
