@@ -59,7 +59,12 @@ namespace ComicBookGallery.Data
                 Favorite = false
             }
 
-        };            
+        };
+        public ComicBook[] GetComicBooks() //created a method of that returns ComicBook objs and  returns the _comicBooks private field
+        {
+            return _comicBooks;
+        }
+
         public ComicBook GetComicBook(int id)
         {
             ComicBook comicBookToReturn = null;
